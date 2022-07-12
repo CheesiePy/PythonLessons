@@ -11,7 +11,7 @@ jelly, bean = "Hello", "World"
 
 
 
-print(jelly,bean, sep=",")  
+print(jelly,bean, sep="+")  
 print(jelly,bean, sep="|")
 print(jelly,bean, sep="\\")  
 print(jelly,bean, sep=" ")      
@@ -23,4 +23,5 @@ print(jelly,bean, sep=" ")
 
 
 
-
+print('5' + '5') # -> 55
+print(5 + 5) # -> 10

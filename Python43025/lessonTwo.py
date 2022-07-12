@@ -25,3 +25,6 @@ print(type(1))
 print(type(1.0))
 print(0.0 == 0)
 
+
+#ctrl + /  to mute a line
+#ctrl + \
