@@ -4,11 +4,12 @@
 
 
 # print("#-------IQ level1-----------")
+
 # print("Hello+World")
 # print("Hello,World")
 # print("Hello|World")
 # print("Hello\World")
-
+# print("Hello%World")
 
 
 # print('#-------IQ level2------------')
@@ -16,7 +17,7 @@
 # print(h,w, sep="|")
 # print(h,w, sep="\\")  
 # print(h,w, sep="END")
-# print(h,w)        
+# print(h,w, sep=' ')        
 
 
 
@@ -24,7 +25,14 @@
 # h, w = "Hello", "World" 
 # symbols = "+-.,&$^987456314522,009)()())(!@#!~@#ADFGSDFG%@#$@#$"
 # for i in symbols:
-#     print(h,w,h,w, sep=i) 
+#     print(h,w, sep=i) 
+
+# stop = 51  ### not including 50  0 -> n-1
+# start = 1
+# jump = 1
+# for i in range(start,stop,jump):
+#     print(i, end='\t')
+
 
 
 # # \ back slash 
@@ -42,42 +50,81 @@
 
 
 mystr = "Hello my friends at progeeks python class"
-seporators = "+-.,&$^987456314522"
+
+mylongstr = """Hello my friends at progeeks python class
+Hello my friends at progeeks python class
+Hello my friends at progeeks python class
+Hello my friends at progeeks python class
+Hello my friends at progeeks python class
+Hello my friends at progeeks python class
+Hello my friends at progeeks python class
+Hello my friends at progeeks python class
+
+"""
+
+# # seporators = "+-.,&$^987456314522"
+
+# # myfriend = "yoav may maor"
+# mylinelist = mylongstr.split('\n')
+# mywordlist = mystr.split()
+# mystr = ""
+
+# # for i in range(len(mywordlist)):
+# #     if i%2 != 1:
+# #         mystr +=  mywordlist[i] + " "
+    
+# print(mystr)
 
 
-mylist = mystr.split()
-# print(mylist)
 
 
 
 
 
-
-start = 0
-stop = len(mystr)
-jump = 1
 
 
 # print(len(mylist)) # -> 7
 
-# list1 = [1,2,2]
+mylist = [1,2,2,'5', 'saba']
+#print(len(list1))
 
-# maylist = [mylist]
+maylist = [mylist]
 
-# print(maylist) # -> 1  
+# print(*maylist) 
 
 # print(mylist, *mylist, sep="+")
 
 
 ## * -> dereferance
 
+# for i in mylist:
+#     print(mylist[i])
+
+# print("----")
+
+# for i in range(len(mylist)):
+#     print(mylist[i])
+
+
 # for i in range(len(mylist)):
 #     print(mylist[::-1])
 
-print(mystr[stop:start:-jump]) ## reverce order its like [::-1]
-print(mylist[start:stop:jump])
+start = 0
+stop = len(mystr)
+jump = 1
 
-print(mystr[::-1])
+
+
+
+
+print(mylist[::-1])
+
+
+# print(mystr[start:stop:jump])
+
+# print(mystr[stop:start:-jump]) ## reverce order its like [::-1]
+
+# print(mystr[::-1])
 
 
 # 1. להכין רשימה של שמות 

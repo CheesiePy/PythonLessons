@@ -1,0 +1,13 @@
+## fuctions
+print(sep=" ",end="\n") 
+type() 
+
+len(a) return the length of a 
+range(start=0, stop=N ,jump=1)  
+
+
+## methods
+mystr.split(param) ## return a splitd list of string  // param must be a char in mystr
+
+
+
