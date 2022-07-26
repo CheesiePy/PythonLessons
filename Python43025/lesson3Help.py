@@ -20,7 +20,7 @@ my_list = mystring.split()
 #         print(my_list[i], mystring[j], sep= ",", end="")
 
 start = 0
-stop = len(mystring)
+stop = len(mystring) # lenth of mystring = 11
 jump = -2
 
 
