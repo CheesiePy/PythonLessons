@@ -1,14 +1,23 @@
-#print('we are the champions ') # - > מחרוזת = String  
-#print(5)                       # -  > מספר שלם = Integer
-x = "Aviv"
-y = x*2
-t = y*4
-type_of_var = type('5')
+#------data type-------#
 
-I = "Shay"
-greet = " is going to shop"
 
-print(I, greet) 
-#print(t)
-#print("0"*5)
-#print(0*5)
+
+"""
+lesson Tools:
+
+type(a) = the type fuction return the data type of a,
+print(a) = print(a) to the console
+
+"""
+
+# ----primitives----#
+a = 15    # integer or int for sort a whole number
+b = "a"   # str/char -!!! in python we str or string type to reprianct a single charicter or a string of charicters
+c = 15.4  # float a decimal point number
+d = True  # boolean or bool for short is a binaty type being ethier one for true or zero for false
+print("----------------")
+print(a, b, c, d)
+print("----------------")
+print(type(a), type(b), type(c), type(d))
+for i in range(5):
+    print("----------------")
