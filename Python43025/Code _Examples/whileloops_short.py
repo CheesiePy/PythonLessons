@@ -15,13 +15,13 @@ while True:  # create a while loop
          counter/math.e * math.sin(counter/(math.e/math.pi)))  # move to the next point
     counter += 1    # add 1 to the counter
 
-    # if counter % 3 == 0:
-    #     color('white')  # change the pen color to green
-    if counter % 5 == 0:
-        color('purple')  # change the pen color to green
+    if counter % 3 == 0:
+        color('red')  # change the pen color to green
+    # elif counter % 5 == 0:
+    #     color('purple')  # change the pen color to green
     elif counter % 7 == 0:
         color('blue')
     #elif counter % 11 == 0:
     #    color('teal')
     else:
-        color('turquoise')
+        color('lightblue')
