@@ -70,12 +70,18 @@ def start(x, y):
     """Start game."""
     grow()
     onscreenclick(tap)
+
 def playmusic():
     winsound.PlaySound('w.mp3',winsound.SND_ASYNC)
 
-setup(420, 420, 370, 0)
-hideturtle()
-tracer(False)
-grid()
-onscreenclick(start)
-done()
+
+def main():
+
+    setup(420, 420, 370, 0) # setup the screen
+    hideturtle() 
+    tracer(False)
+    grid() # draw the grid
+    onscreenclick(start) # start the game
+    done()
+
+main()
