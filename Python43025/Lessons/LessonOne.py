@@ -10,6 +10,7 @@ print(a) = print(a) to the console
 
 """
 
+
 # ----primitives----#
 a = 15    # integer or int for sort a whole number
 b = "a"   # str/char -!!! in python we str or string type to reprianct a single charicter or a string of charicters
@@ -19,5 +20,8 @@ print("----------------")
 print(a, b, c, d)
 print("----------------")
 print(type(a), type(b), type(c), type(d))
-for i in range(5):
+
+
+for jelly in range(5):
+    print(jelly)
     print("----------------")

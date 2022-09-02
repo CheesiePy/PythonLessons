@@ -1,5 +1,10 @@
 # print(a) == print(a, end='\n')
 
+def printMatrix():
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            print(matrix[i][j], end=" ")
+    print()
 
 
 matrix = [[0,0,0],[0,0,0],[0,0,0]]
@@ -26,10 +31,7 @@ while flag:
     if matrix[row][col] == 0:
         matrix[row][col] = 'X'
 
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            print(matrix[i][j], end=" ")
-        print()
+
 
 
 
@@ -44,3 +46,9 @@ while flag:
 #         print(0, end=' ')
     
 #     print()
+
+
+def main():
+    pass
+
+main()    
