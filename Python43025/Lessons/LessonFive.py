@@ -33,11 +33,9 @@ def print_greeting_2(name="John Doe"): ## define a function with parameters
     print("Hello", name)
 
  
-
-
-
 def main(): ## main function
     # home work define crazy_func function
+
     x = "maylindenberg"
     print(crazy_func(x)) # -> crazy_func return -> "MaYliNdEnGeR" this
 main() ## main function call
