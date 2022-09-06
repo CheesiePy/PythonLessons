@@ -2,15 +2,18 @@
 
 ## Functions are a way to reuse code.
 
-# if 5 > 2: ## condition -> True or False
-#     print("V")
-
-# for i in range(6): ## loop
-#     print(i)
+if 5 > 2: ## condition -> True or False
+    print("V")
+    print("mango juice")
 
 
-# while 1 > 2: ## loop - while loop - while condition is true
-#     print("V")    
+for i in range(6): ## loop
+    print(i)
+    print("mango juice")
+
+
+while 1 > 2: ## loop - while loop - while condition is true
+    print("V")    
 
 def greeting(): ## define a function  -> retrun string value
     name = input("Enter your name: ")
