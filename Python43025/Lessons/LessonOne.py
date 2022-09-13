@@ -14,7 +14,7 @@ print(a) = print(a) to the console
 a = 15    # integer or int for sort a whole number
 b = "a"   # str/char -!!! in python we str or string type to reprianct a single charicter or a string of charicters
 c = 15.4  # float a decimal point number
-d = True  # boolean or bool for short is a binaty type being ethier one for true or zero for false
+d = True  # boolean or bool for short is a binary type being ethier one for true or zero for false
 print("----------------")
 print(a, b, c, d)
 print("----------------")
