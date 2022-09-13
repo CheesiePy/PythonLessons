@@ -37,12 +37,14 @@ def print_board(board):
 def get_coordinates():
     pass
 
-def check_coordinates(size):
-    pass    
+def check_coordinates(size, move): 
+    pass     
 
 # def check_game_over():
 #     pass
 
 def main(): # this is were the magic happens
     print_board(create_board(3))
+
+    
 main()    
