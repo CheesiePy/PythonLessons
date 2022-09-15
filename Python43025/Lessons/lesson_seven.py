@@ -31,8 +31,8 @@ def print_board(board):
         print()
 
     
-# def create_players():
-#     pass
+def create_players():
+    pass
 
 def get_coordinates():
     pass
@@ -40,11 +40,17 @@ def get_coordinates():
 def check_coordinates(size, move): 
     pass     
 
-# def check_game_over():
-#     pass
+def check_game_over():
+    pass
 
-def main(): # this is were the magic happens
-    print_board(create_board(3))
 
-    
-main()    
+def main():
+    print("--------------")
+    board = create_board(3)
+    board2 = create_board(5)
+    print_board(board2)
+    print("--------------")
+    print_board(board)
+    print("--------------")
+
+main()     

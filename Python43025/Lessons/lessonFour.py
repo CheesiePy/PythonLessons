@@ -1,5 +1,5 @@
 # range function parameters:
-start = 1  # start is the first number in the range
+start = 0  # start is the first number in the range
 stop = 51  # stop is the last number in the range
 jump = 1  # jump is the number to add to the start number each time the loop iterates
 
