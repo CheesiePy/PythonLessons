@@ -34,23 +34,70 @@ def print_board(board):
 def create_players():
     pass
 
-def get_coordinates():
-    pass
+def get_coordinates(size, board):
+    x = input("please enter row number: ")
+    y = input("please enter col number: ")
+    move = [x,y]
+    if check_coordinates(size, move, board):
+        move = [int(x), int(y)]
+        return move
+    else:
+        print("invalid move")
+        get_coordinates(size, board)    
 
-def check_coordinates(size, move): 
-    pass     
+def check_coordinates(size, move, board):
+    if move[0].isdigit() and move[1].isdigit():
+        if 0 < int(move[0]) <= size and 0 < int(move[1]) <= size:
+            if board[int(move[0]) - 1][int(move[1]) -1] == 0:
+                return True 
+    return False
+
+def insert_move(board, move, player):
+    board[move[0] -1][move[1] -1] = player
 
 def check_game_over():
     pass
 
 
 def main():
-    print("--------------")
-    board = create_board(3)
-    board2 = create_board(5)
-    print_board(board2)
-    print("--------------")
-    print_board(board)
-    print("--------------")
-
+    size = 3
+    player1 = 'X'
+    player2 = 'O'
+    board = create_board(size)
+    win = False
+    counter = 0
+    while not win:
+        current_player = player1 if counter % 2 == 0 else player2
+        print("current player is: ", current_player)
+        print_board(board)
+        move = get_coordinates(size, board)
+        insert_move(board, move, current_player)
+        counter += 1
 main()     
+
+
+"""
+0 0 0
+0 0 0
+0 0 0
+
+1. create the algorithm to check for the winner of the game to
+
+1:
+X X X
+0 0 0
+0 0 0
+
+2:
+X 0 0
+X 0 0
+X 0 0
+
+3:
+X 0 0
+0 X 0
+0 0 X 
+
+plan how to check if one of the conditions are true
+
+"""
