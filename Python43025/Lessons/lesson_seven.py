@@ -6,22 +6,27 @@
 ## turn 
 
 """
-    1. create a board
+    1. create a board & show board 
     2. create two players
-    3. get coordinates from the user
-    4. check if the coordinates are valid -> in board bounds and empty
-    5. check if the game is over
+
+    while game is not over:
+        3. get coordinates from the user
+        4. check if the coordinates are valid -> in board bounds and empty
+        5. check if the game is over
 """
 
 
 
-def create_board(size): ## [[0,0,0],[0,0,0],[0,0,0]]
+def create_board(size):
     matrix = []
     for row in range(size):
         matrix.append([])
         for col in range(size):
             matrix[row].append(0)
-    return matrix
+    return matrix  ##  -> [[0,0,0],[0,0,0],[0,0,0]]
+
+
+
 
 
 def print_board(board):
@@ -73,7 +78,7 @@ def main():
         move = get_coordinates(size, board)
         insert_move(board, move, current_player)
         counter += 1
-main()     
+     
 
 
 """
@@ -101,3 +106,37 @@ X 0 0
 plan how to check if one of the conditions are true
 
 """
+
+
+board = create_board(3) # board -> [[0,0,0],[0,0,0],[0,0,0]]
+for row in range(len(board)): # row -> 0,1,2 run 3 times
+    print("row is:",row)
+    for col in range(len(board[row])): # col -> 0,1,2 run 3 x 3 times
+        print("col is:",col)
+        for z in range(3): # z -> 0,1,2 run 3 x 3 x 3 times
+            print("z is:", z)
+            for w in range(3): # w -> 0,1,2 run 3 x 3 x 3 x 3 times
+                print("w is:", w) 
+    print()
+"""
+
+"""    
+
+
+# for i in range(5):
+#     for j in range(5):
+#         print(j)
+
+
+# for i in range(1, 5): # 1,2,3,4 run 4 times
+#     print(i)
+#     for j in range(2,7): # 2,3,4,5,6 run 4 x 5 times
+#         print(j)
+
+
+# for row in range(1,4): # 0 -> n-1
+#     #print("row is:", row)
+#     for col in range(1,4):
+#         #print("col is:", col + row)
+#         for jelly in range(1,3):
+#             print("jelly is:", jelly + row + col)
