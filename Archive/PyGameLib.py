@@ -11,6 +11,7 @@
 
 # mixer.Sound.play(mysound)
 
+from random import random
 import pygame
 
 pygame.init()
@@ -30,9 +31,10 @@ gameOver = False
 
 while not gameOver:
     for event in pygame.event.get():
+        counter = random()
         if event.type == pygame.QUIT:
             gameOver = True
-    pygame.draw.rect(dis,blue,[290,150,10,10])
+        pygame.draw.rect(dis,blue,[290,150,10+counter,10+counter])
     pygame.display.update()
 
 pygame.quit()

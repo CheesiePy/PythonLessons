@@ -1,15 +1,15 @@
-counter = 0
-my_var = "AvivAmasterProgrammerInTheMaking"
+# counter = 0
+# my_var = "AvivAmasterProgrammerInTheMaking"
 
-print("the value of counter:", counter) # -> 0
+# print("the value of counter:", counter) # -> 0
 
 
 
-for i in my_var:
-    counter += 1
-    print(i, end="\n")
+# for i in my_var:
+#     counter += 1
+#     print(i, end="\n")
 
-print(counter)
+# print(counter)
 
 
 """
@@ -45,8 +45,8 @@ for i in range(10): # -> 0
                         for u in range(10):
                             for z in range(10):
                                 password = str(i) + str(j) + str(k) + str(l) + str(t) + str(y) + str(u) + str(z)
-                                if password == data_base["password"]:
-                                    print("password hacked:", password)
+                                if user == data_base["user"] and password == data_base["password"]:
+                                    print("Welcome to the system")
 
 
 

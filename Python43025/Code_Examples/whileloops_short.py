@@ -2,7 +2,9 @@ from turtle import *  # import the turtle module
 import math  # import the math module
 
 # set up the screen
-screensize(900, 600)  # set the size of the screen
+## set the size of the screen
+Turtle()
+getscreen()
 bgcolor('black')  # set the background color to black
 color('red')  # set the pen color to red
 speed(0)  # set the speed to 0
